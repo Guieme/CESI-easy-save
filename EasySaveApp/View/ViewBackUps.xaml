@@ -1,0 +1,44 @@
+﻿<Page x:Class="EasySaveApp.View.ViewBackUps"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:EasySaveApp.View"
+      xmlns:language ="clr-namespace:EasySaveApp.Properties.Langs"
+      mc:Ignorable="d" 
+      Title="ViewBackUps" Height="560">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="\Images\EasySaveBackUpsSize.PNG"/>
+        </Grid.Background>
+
+        <StackPanel>
+
+            <Frame x:Name="BackUps" Content="" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" NavigationUIVisibility="Hidden"/>
+
+            <RadioButton Content="{x:Static language:Lang.VBU_Add}"
+                             Foreground="Purple"
+                             FontSize="10"
+                             Click="AddBackUps_Click"
+                             Style="{StaticResource BackUpsButton}" Margin="391,34,101,520"/>
+
+            <RadioButton Content="{x:Static language:Lang.VBU_StartAll}"
+                             Foreground="Purple"
+                             FontSize="10"
+                             Click="StartAllBackUps_Click"
+                             Style="{StaticResource BackUpsButton}" Margin="109,-547,384,520" Height="38"/>
+
+            <StackPanel Margin="27,-510,27,70" HorizontalAlignment="Stretch" Height="360">
+                <Image Source="\Images\TextBox.png" Width="180" Margin="0,-10,0,0" HorizontalAlignment="Left"/>
+                <TextBox IsReadOnly="True" Text="{x:Static language:Lang.Search}" Name="falseSearch" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="Gray" Background="Transparent" BorderBrush="Transparent" Height="20" Margin="20,-45,0,0" Width="110"/>
+                <TextBox Name="SearchSave" Foreground="Black" Grid.Column="0" Background="Transparent" HorizontalAlignment="Left" VerticalAlignment="Top" BorderBrush="Transparent" Height="20" Margin="20,-45,0,0" Width="110" TextChanged="Search_TextChanged"/>
+                
+                <ScrollViewer Height="300" Width="565" HorizontalContentAlignment="Left" VerticalContentAlignment="Top">
+                    <StackPanel Name="BackupList" IsVisibleChanged="BackupList_IsVisibleChanged">
+                    </StackPanel>
+                </ScrollViewer>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Page>

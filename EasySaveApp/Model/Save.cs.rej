@@ -1,0 +1,10 @@
+diff a/EasySave/EasySaveApp/Model/Save.cs b/EasySave/EasySaveApp/Model/Save.cs	(rejected hunks)
+@@ -139,7 +139,7 @@
+         {
+             if (start)
+             {
+-                if (Process.HasExited) //Si le process est terminer 
++                if (Process.HasExited && logfilesTocrypt != null && logfilesTocrypt.Count > 0) //Si le process est terminer 
+                 {
+                     logfilesTocrypt.First().CryptingTime = Process.ExitCode; //recuperer la valeur de sortie et l'incorpor�e dans le premier objet LogFile correspondant
+                     logFiles.Add(logfilesTocrypt.First());                 // Ajout de 'objet log dans la liste d'objet LogFile

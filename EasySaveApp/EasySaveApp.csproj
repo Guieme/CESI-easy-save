@@ -1,0 +1,113 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+	<PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+		<UseWPF>true</UseWPF>
+		<UseWindowsForms>true</UseWindowsForms>
+		<ApplicationIcon />
+    <StartupObject />
+  </PropertyGroup>
+	<ItemGroup>
+	  <EmbeddedResource Remove="Properties\Langs\Lang.en.resx" />
+	</ItemGroup>
+	<ItemGroup>
+	  <None Remove="Images\ArrowDownIcon.png" />
+	  <None Remove="Images\ArrowUpIcon.png" />
+	  <None Remove="Images\DownDetailIcon.png" />
+	  <None Remove="Images\EasySaveBackUps.png" />
+	  <None Remove="Images\EasySaveBackUpsSize.PNG" />
+	  <None Remove="Images\EasySaveHomePageWithoutButton.png" />
+	  <None Remove="Images\FilePerson.png" />
+	  <None Remove="Images\Folder.png" />
+	  <None Remove="Images\FolderIcon.png" />
+	  <None Remove="Images\FrameWork.png" />
+	  <None Remove="Images\FrameWrokPlain.png" />
+	  <None Remove="Images\PathBackgrounds.png" />
+	  <None Remove="Images\PauseIcon.png" />
+	  <None Remove="Images\PlayIcon.png" />
+	  <None Remove="Images\PlusIcon.png" />
+	  <None Remove="Images\RadioButtonChecked.png" />
+	  <None Remove="Images\RadioButtonUnchecked.png" />
+	  <None Remove="Images\RedCrossToExit.png" />
+	  <None Remove="Images\Settings.png" />
+	  <None Remove="Images\SquareTextBox.png" />
+	  <None Remove="Images\StartIcon.png" />
+	  <None Remove="Images\StopIcon.png" />
+	  <None Remove="Images\TextBox.png" />
+	  <None Remove="Images\TextBoxNeon.png" />
+	  <None Remove="Images\TrashIcon.png" />
+	  <None Remove="Images\UpDetailIcon.png" />
+	</ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.15.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="System.Management" Version="6.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="Settings.job">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+	  <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="App.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ArrowDownIcon.png" />
+    <Resource Include="Images\ArrowUpIcon.png" />
+    <Resource Include="Images\DownDetailIcon.png" />
+    <Resource Include="Images\EasySaveBackUps.png" />
+    <Resource Include="Images\EasySaveBackUpsSize.PNG" />
+    <Resource Include="Images\EasySaveHomePageWithoutButton.png" />
+    <Resource Include="Images\FilePerson.png" />
+    <Resource Include="Images\Folder.png" />
+    <Resource Include="Images\FolderIcon.png" />
+    <Resource Include="Images\FrameWork.png" />
+    <Resource Include="Images\FrameWrokPlain.png" />
+    <Resource Include="Images\PathBackgrounds.png" />
+    <Resource Include="Images\PauseIcon.png" />
+    <Resource Include="Images\PlayIcon.png" />
+    <Resource Include="Images\PlusIcon.png" />
+    <Resource Include="Images\RadioButtonChecked.png" />
+    <Resource Include="Images\RadioButtonUnchecked.png" />
+    <Resource Include="Images\RedCrossToExit.png" />
+    <Resource Include="Images\Settings.png" />
+    <Resource Include="Images\SquareTextBox.png" />
+    <Resource Include="Images\StartIcon.png" />
+    <Resource Include="Images\StopIcon.png" />
+    <Resource Include="Images\TextBox.png" />
+    <Resource Include="Images\TextBoxNeon.png" />
+    <Resource Include="Images\TrashIcon.png" />
+    <Resource Include="Images\UpDetailIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Properties\Langs\Lang.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Lang.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Langs\Lang.fr.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Properties\Langs\Lang.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Lang.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Properties\Langs\Lang.zh.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

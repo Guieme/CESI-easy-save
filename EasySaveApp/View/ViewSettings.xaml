@@ -1,0 +1,133 @@
+﻿<Page x:Class="EasySaveApp.View.ViewSettings"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:EasySaveApp.View"
+      xmlns:language="clr-namespace:EasySaveApp.Properties.Langs"
+      mc:Ignorable="d" 
+      Title="ViewSettings" Height="560">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="\Images\EasySaveBackUpsSize.PNG"/>
+        </Grid.Background>
+
+        <StackPanel>
+            <Frame x:Name="Settings" Content="" Grid.Column="1" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" NavigationUIVisibility="Hidden"/>
+
+                <Grid Height="53" Margin="0,13,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+                <RadioButton Content="{x:Static language:Lang.French}" Name="fr"
+                             Foreground="Purple"
+                             FontSize="16"
+                             Grid.Column="1"
+                             Style="{StaticResource BackUpsButton}" Margin="5,0,20,0" Height="20" Click="LanguageButton_Click"/>
+
+            <RadioButton Content="{x:Static language:Lang.English}" Name="en"
+                             Foreground="Purple"
+                             FontSize="16"
+                         Grid.Column="0"
+                             Style="{StaticResource BackUpsButton}" Margin="30,0,0,0" Height="23" Click="LanguageButton_Click"/>
+
+                </Grid>
+                 <StackPanel Height="495" Margin="0,0,0,0">
+                <Grid VerticalAlignment="Top" Width="500" Margin="0,60,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="100"/>
+                        <RowDefinition Height="100"/>
+                        <RowDefinition Height="100"/>
+                    </Grid.RowDefinitions>
+                    <Image Source="\Images\FrameWork.png" Height="100" Width="338" Grid.Column="0" Grid.Row="0"/>
+                    <RadioButton Content="{x:Static language:Lang.VS_ExtCrypt}" HorizontalAlignment="Center" Grid.Column="0" Grid.Row="0"
+                             Foreground="White"
+                             FontSize="16"
+                             Click="ExtensionToCrypt_Click" 
+                             Style="{StaticResource BackUpsButton}" Margin="0,0,0,0" Width="214" RenderTransformOrigin="0.5,0.5" Height="70">
+                        <RadioButton.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform AngleY="0.112"/>
+                                <RotateTransform/>
+                                <TranslateTransform Y="0.198"/>
+                            </TransformGroup>
+                        </RadioButton.RenderTransform>
+                    </RadioButton>
+                    <Image Source="\Images\FrameWork.png" Height="100" Width="338" Grid.Column="1" Grid.Row="0"/>
+                    <RadioButton Content="{x:Static language:Lang.VS_LogFile}" HorizontalAlignment="Center" Grid.Column="1" Grid.Row="0"
+                             Foreground="White"
+                             FontSize="16"
+                             Click="ExtensionLogFile_Click"
+                             Style="{StaticResource BackUpsButton}" Margin="0,0,0,0" Width="214" RenderTransformOrigin="0.5,0.5">
+                        <RadioButton.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform AngleY="0.112"/>
+                                <RotateTransform/>
+                                <TranslateTransform Y="0.198"/>
+                            </TransformGroup>
+                        </RadioButton.RenderTransform>
+                    </RadioButton>
+
+
+                    <Image Source="\Images\FrameWork.png" Height="100" Width="338" Grid.Column="0" Grid.Row="1"/>
+                    <RadioButton Content="{x:Static language:Lang.VS_BS}" HorizontalAlignment="Center" Grid.Column="0" Grid.Row="1"
+                             Foreground="White"
+                             FontSize="16"
+                             Click="Business_Click"
+                             Style="{StaticResource BackUpsButton}" Margin="0,0,0,0" Width="244" RenderTransformOrigin="0.5,0.5" Height="50">
+                        <RadioButton.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform AngleY="0.112"/>
+                                <RotateTransform/>
+                                <TranslateTransform Y="0.198"/>
+                            </TransformGroup>
+                        </RadioButton.RenderTransform>
+                    </RadioButton>
+
+                    <Image Source="\Images\FrameWork.png" Height="100"  Grid.Column="1" Grid.Row="1"/>
+                    <RadioButton Content="{x:Static language:Lang.VS_PF}" HorizontalAlignment="Center" Grid.Column="1" Grid.Row="1"
+                             Foreground="White"
+                             FontSize="16"
+                             Click="PriorityFiles_Click"
+                             Style="{StaticResource BackUpsButton}" Margin="0,0,0,0" Width="244" RenderTransformOrigin="0.5,0.5" Height="50">
+                        <RadioButton.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform AngleY="0.112"/>
+                                <RotateTransform/>
+                                <TranslateTransform Y="0.198"/>
+                            </TransformGroup>
+                        </RadioButton.RenderTransform>
+                    </RadioButton>
+
+                    <Image Source="\Images\FrameWork.png" Height="100" Width="338" Grid.Column="0" Grid.Row="2"/>
+                    <RadioButton Content="{x:Static language:Lang.VIFS_MaxSize}" HorizontalAlignment="Center" Grid.Column="0" Grid.Row="2"
+                             Foreground="White"
+                             FontSize="16"
+                             Click="InputFileSize_Click"
+                             Style="{StaticResource BackUpsButton}" Margin="0,0,0,0" Width="214" RenderTransformOrigin="0.5,0.5">
+                        <RadioButton.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform AngleY="0.112"/>
+                                <RotateTransform/>
+                                <TranslateTransform Y="0.198"/>
+                            </TransformGroup>
+                        </RadioButton.RenderTransform>
+                    </RadioButton>
+
+                </Grid>
+                <Image Source="\Images\FilePerson.png"  Height="163" Width="203"  MouseLeftButtonUp="EasterEgg" Name="zh" Margin="250,-100,0,0"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Page>

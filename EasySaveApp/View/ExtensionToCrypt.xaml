@@ -1,0 +1,130 @@
+﻿<Page x:Class="EasySaveApp.View.ExtensionToCrypt"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:EasySaveApp.View"
+      xmlns:language="clr-namespace:EasySaveApp.Properties.Langs"
+      mc:Ignorable="d" 
+      Title="ExtensionToCrypt" Height="560">
+    <Page.Resources>
+        <Style x:Key="FocusVisual">
+            <Setter Property="Control.Template">
+                <Setter.Value>
+                    <ControlTemplate>
+                        <Rectangle Margin="2" StrokeDashArray="1 2" SnapsToDevicePixels="true" StrokeThickness="1" Stroke="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <SolidColorBrush x:Key="Button.Static.Background" Color="#FFDDDDDD"/>
+        <SolidColorBrush x:Key="Button.Static.Border" Color="#FF707070"/>
+        <SolidColorBrush x:Key="Button.MouseOver.Background" Color="Transparent"/>
+        <SolidColorBrush x:Key="Button.MouseOver.Border" Color="Transparent"/>
+        <SolidColorBrush x:Key="Button.Pressed.Background" Color="Transparent"/>
+        <SolidColorBrush x:Key="Button.Pressed.Border" Color="Transparent"/>
+        <SolidColorBrush x:Key="Button.Disabled.Background" Color="#FFF4F4F4"/>
+        <SolidColorBrush x:Key="Button.Disabled.Border" Color="#FFADB2B5"/>
+        <SolidColorBrush x:Key="Button.Disabled.Foreground" Color="#FF838383"/>
+        <Style x:Key="ButtonStyle1" TargetType="{x:Type Button}">
+            <Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual}"/>
+            <Setter Property="Background" Value="{StaticResource Button.Static.Background}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource Button.Static.Border}"/>
+            <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="Padding" Value="1"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border x:Name="border" Background="{TemplateBinding Background}" BorderThickness="{TemplateBinding BorderThickness}" BorderBrush="{TemplateBinding BorderBrush}" SnapsToDevicePixels="true">
+                            <ContentPresenter x:Name="contentPresenter" Focusable="False" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsDefaulted" Value="true">
+                                <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}"/>
+                            </Trigger>
+                            <Trigger Property="IsMouseOver" Value="true">
+                                <Setter Property="Background" TargetName="border" Value="{StaticResource Button.MouseOver.Background}"/>
+                                <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource Button.MouseOver.Border}"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="true">
+                                <Setter Property="Background" TargetName="border" Value="{StaticResource Button.Pressed.Background}"/>
+                                <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource Button.Pressed.Border}"/>
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="false">
+                                <Setter Property="Background" TargetName="border" Value="{StaticResource Button.Disabled.Background}"/>
+                                <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource Button.Disabled.Border}"/>
+                                <Setter Property="TextElement.Foreground" TargetName="contentPresenter" Value="{StaticResource Button.Disabled.Foreground}"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Page.Resources>
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="\Images\EasySaveBackUpsSize.PNG"/>
+        </Grid.Background>
+        <StackPanel>
+            <Frame x:Name="ExtensionToCryptFrame" Content="" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" NavigationUIVisibility="Hidden"/>
+
+            <RadioButton Content="{x:Static language:Lang.Delete}"
+                             Foreground="Purple"
+                             FontSize="16"
+                             Click="Delete_Click"
+                             Style="{StaticResource BackUpsButton}" Margin="391,29,101,520"/>
+
+            <RadioButton Content="{x:Static language:Lang.back}"
+                             Foreground="Purple"
+                             FontSize="16"
+                             Click="BackEncryption_Click"
+                             Style="{StaticResource BackUpsButton}" Margin="105,-542,384,520"/>
+            <Grid Margin="27,-775,27,69" Width="568" Height="75">
+                <TextBox Text="{x:Static language:Lang.ETC_Ent}" Background ="Transparent" BorderBrush="Transparent" VerticalContentAlignment="Center" HorizontalAlignment="Center" Foreground="White" FontSize="25" IsReadOnly="True" FontWeight="Bold" />
+            </Grid>
+            <GroupItem Margin="27,-375,27,69">
+                <Grid Height="40">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid Grid.Column="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Image Grid.Column="0" Source="\Images\TextBox.png" Width="140" Margin="-10"/>
+                        <TextBox IsReadOnly="True" Text="{x:Static language:Lang.Search}" Name="falseSearch" Foreground="Gray" Grid.Column="0" Background="Transparent" BorderBrush="Transparent" Height="20" Margin="10,0,10,0" Width="110"/>
+                        <TextBox Name="Search" Foreground="Black" Grid.Column="0" Background="Transparent" BorderBrush="Transparent" Height="20" Margin="10,0,10,0" Width="110" TextChanged="Search_TextChanged"/>
+                        
+
+                        <Image Grid.Column="1" Source="\Images\ArrowUpIcon.png" Margin="0,0,110,0" Width="30"/>
+                        <Image Grid.Column="1" Source="\Images\ArrowDownIcon.png" Margin="0,0,50,0" Width="30"/>
+                        <Button Grid.Column="1" Name ="ascending" HorizontalAlignment="Center" Margin="0,0,110,0" Width="20" Height="25" Background="Transparent" BorderBrush="Transparent" Click="SortExtension"/>
+                        <Button Style="{DynamicResource ButtonStyle1}" Grid.Column="1" Name ="descending" HorizontalAlignment="Center" Margin="0,0,50,0" Width="20" Height="25" Background="Transparent" BorderBrush="Transparent" Click="SortExtension"/>
+                    </Grid>
+                    <Grid Grid.Column="1">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="200"/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Image Grid.Column="0" Source="\Images\TextBox.png" Width="140" Margin="-10" HorizontalAlignment="Right"/>
+                        <TextBox IsReadOnly="True" Text="{x:Static language:Lang.Extension_Example}" Name="falseTxtNewExtention" Foreground="Gray" Grid.Column="0" Background="Transparent" BorderBrush="Transparent" Height="20" Margin="10,0,10,0" Width="110" HorizontalAlignment="Right"/>
+                        <TextBox Name="txtNewExtention" Foreground="Black" Grid.Column="0" Background="Transparent" BorderBrush="Transparent" Height="20" Margin="10,0,10,0" Width="110" HorizontalAlignment="Right" TextChanged="NewExtension_TextChanged"/>
+
+                        <Image Grid.Column="1" Source="\Images\PlusIcon.png" Width="30" HorizontalAlignment="Center"/>
+                        <Button Grid.Column="1" HorizontalAlignment="Center" Width="20" Height="25" Background="Transparent" BorderBrush="Transparent" Click="AddExtension_Click"/>
+                    </Grid>
+                </Grid>
+            </GroupItem>
+            <ScrollViewer Margin="27,-340,27,69" VerticalScrollBarVisibility="Hidden" Height="275">
+                <StackPanel Name="ExtentionList">
+                </StackPanel>
+            </ScrollViewer>
+        </StackPanel>
+    </Grid>
+</Page>

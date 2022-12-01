@@ -1,0 +1,49 @@
+﻿<Page x:Class="EasySaveApp.View.ViewInputFileSize"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:EasySaveApp.View"
+      xmlns:language="clr-namespace:EasySaveApp.Properties.Langs"
+      mc:Ignorable="d" 
+      Title="ViewInputFileSize" Height="560">
+
+    <Grid>
+            <Grid.Background>
+                <ImageBrush ImageSource="\Images\EasySaveBackUpsSize.PNG"/>
+            </Grid.Background>
+
+            <StackPanel Margin="0,0,0,10">
+                
+            <Frame x:Name="InputFileSize" Content="" Grid.Column="1" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" NavigationUIVisibility="Hidden"/>
+            <RadioButton Content="{x:Static language:Lang.confirm}"
+                             Foreground="Purple"
+                             FontSize="16"
+                             Click="Confirm_Click"
+                             Style="{StaticResource BackUpsButton}" Margin="395,29,101,520"/>
+
+            <RadioButton Content="{x:Static language:Lang.back}"
+                             Foreground="Purple"
+                             FontSize="16"
+                             Click="Back_Click"
+                             Style="{StaticResource BackUpsButton}"  Margin="105,-542,384,520"/>
+
+
+            <StackPanel Height="380" Margin="0,-500,0,0">
+                <GroupItem>
+                    <Grid>
+                        <Image Source="\Images\FrameWork.png" Height="50" Width="338"/>
+                        <TextBox Style="{StaticResource ResourceKey=PathModernTextbox}" IsReadOnly="True" Text="{x:Static language:Lang.VIFS_MaxSize}"></TextBox>
+                    </Grid>
+                </GroupItem>
+
+                <GroupItem Width="568" Margin="0,0,0,0">
+                    <Grid Height="50" VerticalAlignment="Top">
+                        <Image Source="\Images\PathBackgrounds.png"/>
+                        <TextBox PreviewTextInput="PreviewTextInput" x:Name ="fileSize" TextAlignment="Center" TextWrapping="NoWrap" Margin="0,0,10,0" Text="{x:Static language:Lang.VIFS_Value}" Background="Transparent" BorderThickness="0" VerticalContentAlignment="Center" HorizontalAlignment="Center" Foreground="White" FontSize="14"/>
+                    </Grid>
+                </GroupItem>
+            </StackPanel>
+            </StackPanel>
+    </Grid>
+</Page>

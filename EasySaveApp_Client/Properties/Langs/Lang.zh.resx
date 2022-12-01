@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="back" xml:space="preserve">
+    <value>背部</value>
+  </data>
+  <data name="BSVM_Delete" xml:space="preserve">
+    <value>是否確實要刪除此業務軟體</value>
+  </data>
+  <data name="Business_Example" xml:space="preserve">
+    <value>示例.可執行</value>
+  </data>
+  <data name="Chinese" xml:space="preserve">
+    <value>中国人</value>
+  </data>
+  <data name="Choice" xml:space="preserve">
+    <value>確認</value>
+  </data>
+  <data name="Choice_ChangeLanguage" xml:space="preserve">
+    <value>是否要將語言更改為法語</value>
+  </data>
+  <data name="Choice_Confirm" xml:space="preserve">
+    <value>是否確實要退出</value>
+  </data>
+  <data name="confirm" xml:space="preserve">
+    <value>確認</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>刪除所有內容</value>
+  </data>
+  <data name="DeleteBusinessVerif" xml:space="preserve">
+    <value>是否確實要刪除所有軟體</value>
+  </data>
+  <data name="DeleteConfirm" xml:space="preserve">
+    <value>確認</value>
+  </data>
+  <data name="DeleteExtensionVerif" xml:space="preserve">
+    <value>擴展到地穴</value>
+  </data>
+  <data name="DeletePriorityExtension" xml:space="preserve">
+    <value>是否確實要刪除所有擴展名以優先顯示</value>
+  </data>
+  <data name="ELF_Select" xml:space="preserve">
+    <value>選擇一個擴展</value>
+  </data>
+  <data name="English" xml:space="preserve">
+    <value>英语</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>關鍵錯誤！</value>
+  </data>
+  <data name="Error_BusinessInvalidFormat" xml:space="preserve">
+    <value>輸入不能為空</value>
+  </data>
+  <data name="Error_BusinessSoftware" xml:space="preserve">
+    <value>錯誤：此業務軟體已在業務軟體清單中</value>
+  </data>
+  <data name="Error_ExtensionInvalidFormat" xml:space="preserve">
+    <value>格式無效</value>
+  </data>
+  <data name="Error_ExtensionToCrypt" xml:space="preserve">
+    <value>錯誤：填寫的擴展名已存在於要加密的擴展名清單中</value>
+  </data>
+  <data name="Error_ExtensionToPriorise" xml:space="preserve">
+    <value>錯誤：擴展程式已在要優先處理的擴展程式清單中</value>
+  </data>
+  <data name="Error_NoPath" xml:space="preserve">
+    <value>錯誤：源路徑和目標路徑都不存在</value>
+  </data>
+  <data name="Error_NoSource" xml:space="preserve">
+    <value>錯誤：輸入的源路徑不存在</value>
+  </data>
+  <data name="Error_NoTarget" xml:space="preserve">
+    <value>錯誤：輸入的目標路徑不存在</value>
+  </data>
+  <data name="Error_SamePath" xml:space="preserve">
+    <value>源路徑和目標路徑不能相同</value>
+  </data>
+  <data name="Error_SameSaveName" xml:space="preserve">
+    <value>錯誤：此備份名稱已分配。</value>
+  </data>
+  <data name="ETCVM_Delete" xml:space="preserve">
+    <value>是否確實要刪除此保存</value>
+  </data>
+  <data name="ETC_Ent" xml:space="preserve">
+    <value>輸入您的分機</value>
+  </data>
+  <data name="ETC_Ext" xml:space="preserve">
+    <value>延期</value>
+  </data>
+  <data name="Extension_Example" xml:space="preserve">
+    <value>.示例</value>
+  </data>
+  <data name="French" xml:space="preserve">
+    <value>法语</value>
+  </data>
+  <data name="Hello" xml:space="preserve">
+    <value>你好</value>
+  </data>
+  <data name="Info" xml:space="preserve">
+    <value>信息</value>
+  </data>
+  <data name="Info_CreatePath" xml:space="preserve">
+    <value>目標已正確創建</value>
+  </data>
+  <data name="Info_CurrentLanguage" xml:space="preserve">
+    <value>語言已經是英語</value>
+  </data>
+  <data name="Info_ExtensionAdded" xml:space="preserve">
+    <value>擴展名：已成功加入列表</value>
+  </data>
+  <data name="Info_LogExtension" xml:space="preserve">
+    <value>擴展名： 被定義為紀錄檔擴展名</value>
+  </data>
+  <data name="Info_SaveCreated" xml:space="preserve">
+    <value>備份：已成功添加</value>
+  </data>
+  <data name="Info_SoftwareAdded" xml:space="preserve">
+    <value>商務軟件：已正確添加到列表中</value>
+  </data>
+  <data name="Main_BU" xml:space="preserve">
+    <value>備份</value>
+  </data>
+  <data name="Main_Exit" xml:space="preserve">
+    <value>離開</value>
+  </data>
+  <data name="Main_Settings" xml:space="preserve">
+    <value>設置</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>研究</value>
+  </data>
+  <data name="VBS_Ent" xml:space="preserve">
+    <value>輸入您的路徑</value>
+  </data>
+  <data name="VBS_Path" xml:space="preserve">
+    <value>小路</value>
+  </data>
+  <data name="VBU_Add" xml:space="preserve">
+    <value>添加備份</value>
+  </data>
+  <data name="VBU_Delete" xml:space="preserve">
+    <value>刪除</value>
+  </data>
+  <data name="VBU_Edit" xml:space="preserve">
+    <value>修改</value>
+  </data>
+  <data name="VBU_Start" xml:space="preserve">
+    <value>扔</value>
+  </data>
+  <data name="VBU_StartAll" xml:space="preserve">
+    <value>開始所有備份</value>
+  </data>
+  <data name="VCBU_Complete" xml:space="preserve">
+    <value>完全的</value>
+  </data>
+  <data name="VCBU_Diff" xml:space="preserve">
+    <value>微分</value>
+  </data>
+  <data name="VCBU_Name" xml:space="preserve">
+    <value>姓名</value>
+  </data>
+  <data name="VCBU_SelectN" xml:space="preserve">
+    <value>選擇保存名稱</value>
+  </data>
+  <data name="VCBU_SelectSP" xml:space="preserve">
+    <value>選擇源路徑</value>
+  </data>
+  <data name="VCBU_SelectTP" xml:space="preserve">
+    <value>選擇目標路徑</value>
+  </data>
+  <data name="VCBU_SP" xml:space="preserve">
+    <value>源路徑</value>
+  </data>
+  <data name="VCBU_TP" xml:space="preserve">
+    <value>目標路徑</value>
+  </data>
+  <data name="VIFS_MaxSize" xml:space="preserve">
+    <value>最大尺寸</value>
+  </data>
+  <data name="VIFS_Value" xml:space="preserve">
+    <value>輸入正確的值</value>
+  </data>
+  <data name="VP_SetPE" xml:space="preserve">
+    <value>設置優先擴展</value>
+  </data>
+  <data name="VS_BS" xml:space="preserve">
+    <value>商業軟體</value>
+  </data>
+  <data name="VS_ExtCrypt" xml:space="preserve">
+    <value>加密擴展</value>
+  </data>
+  <data name="VS_LogFile" xml:space="preserve">
+    <value>日誌文件的擴展</value>
+  </data>
+  <data name="VS_MaxSize" xml:space="preserve">
+    <value>最大同時文件大小</value>
+  </data>
+  <data name="VS_PF" xml:space="preserve">
+    <value>优先级文件</value>
+  </data>
+</root>

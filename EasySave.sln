@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32002.185
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cryptosoft", "Cryptosoft\Cryptosoft.csproj", "{B0205741-EFC2-4C74-A192-88A9052E9405}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasySaveApp", "EasySaveApp\EasySaveApp.csproj", "{9251B2A7-F8FD-418E-954A-ADF8D1A1C8EE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CryptosoftTests", "CryptosoftTests\CryptosoftTests.csproj", "{0A0342A5-F69B-48D5-8F2E-91A3D4F8ABD3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasySaveApp_Client", "EasySaveApp_Client\EasySaveApp_Client.csproj", "{97CDE589-5750-4AA7-9578-763984E5BD1F}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "CryptoSoft_Installer", "CryptoSoft_Installer\CryptoSoft_Installer.vdproj", "{10DF5E19-83C5-4DC0-8292-AC78A84BDF70}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "EasySave - Deported console", "EasySave - Deported console\EasySave - Deported console.vdproj", "{260DCBC1-D3F0-4E09-9AE4-35EC3561CDC2}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "EasySaveSoftware", "EasySaveSoftware\EasySaveSoftware.vdproj", "{CD967F43-363C-473E-B77D-4343835C5BAC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B0205741-EFC2-4C74-A192-88A9052E9405}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0205741-EFC2-4C74-A192-88A9052E9405}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9251B2A7-F8FD-418E-954A-ADF8D1A1C8EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9251B2A7-F8FD-418E-954A-ADF8D1A1C8EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9251B2A7-F8FD-418E-954A-ADF8D1A1C8EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9251B2A7-F8FD-418E-954A-ADF8D1A1C8EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A0342A5-F69B-48D5-8F2E-91A3D4F8ABD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A0342A5-F69B-48D5-8F2E-91A3D4F8ABD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97CDE589-5750-4AA7-9578-763984E5BD1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97CDE589-5750-4AA7-9578-763984E5BD1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97CDE589-5750-4AA7-9578-763984E5BD1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10DF5E19-83C5-4DC0-8292-AC78A84BDF70}.Debug|Any CPU.ActiveCfg = Debug
+		{10DF5E19-83C5-4DC0-8292-AC78A84BDF70}.Release|Any CPU.ActiveCfg = Release
+		{260DCBC1-D3F0-4E09-9AE4-35EC3561CDC2}.Debug|Any CPU.ActiveCfg = Debug
+		{260DCBC1-D3F0-4E09-9AE4-35EC3561CDC2}.Release|Any CPU.ActiveCfg = Release
+		{CD967F43-363C-473E-B77D-4343835C5BAC}.Debug|Any CPU.ActiveCfg = Debug
+		{CD967F43-363C-473E-B77D-4343835C5BAC}.Release|Any CPU.ActiveCfg = Release
+		{CD967F43-363C-473E-B77D-4343835C5BAC}.Release|Any CPU.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {56AFA1B2-E357-4CB3-923A-85CBE1268D7B}
+	EndGlobalSection
+EndGlobal

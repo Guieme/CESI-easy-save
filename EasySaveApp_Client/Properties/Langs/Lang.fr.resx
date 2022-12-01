@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="back" xml:space="preserve">
+    <value>Retour</value>
+  </data>
+  <data name="BSVM_Delete" xml:space="preserve">
+    <value>Êtes vous certain de vouloir supprimer ce logiciel métier  ?</value>
+  </data>
+  <data name="Business_Example" xml:space="preserve">
+    <value>exemple.exe</value>
+  </data>
+  <data name="Chinese" xml:space="preserve">
+    <value>Mandarin</value>
+  </data>
+  <data name="Choice" xml:space="preserve">
+    <value>Confirmation</value>
+  </data>
+  <data name="Choice_ChangeLanguage" xml:space="preserve">
+    <value>Voulez vous changez la langue en anglais ?</value>
+  </data>
+  <data name="Choice_Confirm" xml:space="preserve">
+    <value>Êtes vous certain de vouloir quitter EasySave</value>
+  </data>
+  <data name="confirm" xml:space="preserve">
+    <value>Confirmer</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Tout effacer</value>
+  </data>
+  <data name="DeleteBusinessVerif" xml:space="preserve">
+    <value>Êtes vous certain de vouloir supprimer tous les logiciles metiers ?</value>
+  </data>
+  <data name="DeleteConfirm" xml:space="preserve">
+    <value>Confirmation</value>
+  </data>
+  <data name="DeleteExtensionVerif" xml:space="preserve">
+    <value>Êtes vous certain de vouloir supprimer toutes les extensions à crypter ?</value>
+  </data>
+  <data name="DeletePriorityExtension" xml:space="preserve">
+    <value>Êtes vous certain de vouloir supprimer toutes les extensions à prioriser ?</value>
+  </data>
+  <data name="ELF_Select" xml:space="preserve">
+    <value>Selectionner une extension</value>
+  </data>
+  <data name="English" xml:space="preserve">
+    <value>Anglais</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Erreur Critique !</value>
+  </data>
+  <data name="Error_BusinessInvalidFormat" xml:space="preserve">
+    <value>Le champ ne peut pas être vide</value>
+  </data>
+  <data name="Error_BusinessSoftware" xml:space="preserve">
+    <value>Erreur : Ce logiciel metier est déja présent dans la liste de logiciel métier</value>
+  </data>
+  <data name="Error_ExtensionInvalidFormat" xml:space="preserve">
+    <value>Format invalide (.exemple)</value>
+  </data>
+  <data name="Error_ExtensionToCrypt" xml:space="preserve">
+    <value>Erreur : L'extension renseignée est déja présente dans la liste d'extension à crypter</value>
+  </data>
+  <data name="Error_ExtensionToPriorise" xml:space="preserve">
+    <value>Erreur : L'extension est déja dans la liste des extensions à prioriser</value>
+  </data>
+  <data name="Error_NoPath" xml:space="preserve">
+    <value>Erreur : Ni la source ni le chemin de destination n'existent</value>
+  </data>
+  <data name="Error_NoSource" xml:space="preserve">
+    <value>Erreur : Le chemin Source saisi n'existe pas</value>
+  </data>
+  <data name="Error_NoTarget" xml:space="preserve">
+    <value>Erreur : Le chemin Target saisi n'existe pas</value>
+  </data>
+  <data name="Error_SameSaveName" xml:space="preserve">
+    <value>Erreur : Ce nom de sauvegarde est déjà attribué.</value>
+  </data>
+  <data name="Error_Same_Path" xml:space="preserve">
+    <value>Erreur : Les chemins source et destination ne peuvent être les mêmes</value>
+  </data>
+  <data name="ETCVM_Delete" xml:space="preserve">
+    <value>Êtes vous certain de vouloir supprimer cette extension ?</value>
+  </data>
+  <data name="ETC_Ent" xml:space="preserve">
+    <value>Saisissez votre extension</value>
+  </data>
+  <data name="ETC_Ext" xml:space="preserve">
+    <value>Extension</value>
+  </data>
+  <data name="Extension_Example" xml:space="preserve">
+    <value>.exemple</value>
+  </data>
+  <data name="French" xml:space="preserve">
+    <value>Français</value>
+  </data>
+  <data name="Hello" xml:space="preserve">
+    <value>Bonjour</value>
+  </data>
+  <data name="Info" xml:space="preserve">
+    <value>Information</value>
+  </data>
+  <data name="Info_CreatePath" xml:space="preserve">
+    <value>Le chemin de destination a correctement été crée</value>
+  </data>
+  <data name="Info_CurrentLanguage" xml:space="preserve">
+    <value>La langue est déjà en francais</value>
+  </data>
+  <data name="Info_ExtensionAdded" xml:space="preserve">
+    <value>L'extension : a correctement été ajoutée à la liste</value>
+  </data>
+  <data name="Info_LogExtension" xml:space="preserve">
+    <value>L'extension : a été définie comme extension de fichier de logs </value>
+  </data>
+  <data name="Info_SaveCreated" xml:space="preserve">
+    <value>La sauvegarde : a correctement été ajoutée à la liste de sauvegarde</value>
+  </data>
+  <data name="Info_SoftwareAdded" xml:space="preserve">
+    <value>Le logiciel métier : a correctement été ajouté à la liste</value>
+  </data>
+  <data name="Main_BU" xml:space="preserve">
+    <value>Sauvegardes</value>
+  </data>
+  <data name="Main_Exit" xml:space="preserve">
+    <value>Quitter</value>
+  </data>
+  <data name="Main_Settings" xml:space="preserve">
+    <value>Paramètres</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Rechercher</value>
+  </data>
+  <data name="VBS_Ent" xml:space="preserve">
+    <value>Saisissez votre chemin</value>
+  </data>
+  <data name="VBS_Path" xml:space="preserve">
+    <value>Chemin</value>
+  </data>
+  <data name="VBU_Add" xml:space="preserve">
+    <value>Ajouter une sauvegarde</value>
+  </data>
+  <data name="VBU_Delete" xml:space="preserve">
+    <value>Êtes vous certain de vouloir supprimer cette sauvegarde ?</value>
+  </data>
+  <data name="VBU_Edit" xml:space="preserve">
+    <value>Modifier</value>
+  </data>
+  <data name="VBU_Start" xml:space="preserve">
+    <value>Lancer</value>
+  </data>
+  <data name="VBU_StartAll" xml:space="preserve">
+    <value>Lancer toutes les sauvegardes</value>
+  </data>
+  <data name="VCBU_Complete" xml:space="preserve">
+    <value>Complète</value>
+  </data>
+  <data name="VCBU_Diff" xml:space="preserve">
+    <value>Differentielle</value>
+  </data>
+  <data name="VCBU_Name" xml:space="preserve">
+    <value>Nom</value>
+  </data>
+  <data name="VCBU_SelectN" xml:space="preserve">
+    <value>Saisissez un nom de sauvegarde</value>
+  </data>
+  <data name="VCBU_SelectSP" xml:space="preserve">
+    <value>Selectionnez le Chemin Source</value>
+  </data>
+  <data name="VCBU_SelectTP" xml:space="preserve">
+    <value>Selectionnez le Chemin de Destination</value>
+  </data>
+  <data name="VCBU_SP" xml:space="preserve">
+    <value>Source</value>
+  </data>
+  <data name="VCBU_TP" xml:space="preserve">
+    <value>Destination</value>
+  </data>
+  <data name="VIFS_MaxSize" xml:space="preserve">
+    <value>Taille maximale</value>
+  </data>
+  <data name="VIFS_Value" xml:space="preserve">
+    <value>Saissez une valeur</value>
+  </data>
+  <data name="VP_SetPE" xml:space="preserve">
+    <value>Paramétrez les extensions prioritaires</value>
+  </data>
+  <data name="VS_BS" xml:space="preserve">
+    <value>Logiciel d'entreprise</value>
+  </data>
+  <data name="VS_ExtCrypt" xml:space="preserve">
+    <value>Extension à crypter</value>
+  </data>
+  <data name="VS_LogFile" xml:space="preserve">
+    <value>Extension des fichiers de log</value>
+  </data>
+  <data name="VS_MaxSize" xml:space="preserve">
+    <value>Taille maximale de fichiers simultanés</value>
+  </data>
+  <data name="VS_PF" xml:space="preserve">
+    <value>Fichiers prioritaires</value>
+  </data>
+</root>
